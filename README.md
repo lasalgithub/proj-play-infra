@@ -25,3 +25,8 @@ az group create --name $APP_NAME --location eastus
 ```s
 az cosmosdb create --name $APP_NAME --resource-group $APP_NAME --kind MongoDB --enable-free-tier
 ```
+
+## Creating Azure Service Bus namespace
+```s
+az servicebus namespace create --name $APP_NAME --resource-group $APP_NAME --sku Standard
+```
