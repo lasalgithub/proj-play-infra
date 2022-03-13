@@ -9,3 +9,15 @@ GH_PAT=[GitHubToken]
 dotnet nuget add source --username USERNAME --password $GH_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/$OWNER/index.json"
 ```
 
+## Azure login and setting subscription
+```s
+az account set --subscription ".NET Microservices"
+az account show
+```
+
+## Creating the Azure resource group
+
+```s
+APP_NAME="playhub"
+az group create --name $APP_NAME --location eastus
+```
